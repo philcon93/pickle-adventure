@@ -24,6 +24,7 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link";
+import Image from "next/image";
 
 interface Link {
   label: string;
@@ -43,7 +44,7 @@ export function Scene(props: { data: SceneProps }) {
   return (
     <>
       <Title title={data.title} />
-      <Image />
+      <ImageWrapper />
       <div className="space-y-4 text-center font-sans font-[Geist]">
         {data.description && <Description description={data.description} />}
         <Links links={data.links} />
@@ -62,11 +63,11 @@ const Title = (props: { title: string }) => {
   );
 };
 
-const Image = (props: { src?: string; alt?: string }) => {
+const ImageWrapper = (props: { src?: string; alt?: string }) => {
   const { src = "/placeholder.svg", alt = "Choose Your Adventure" } = props;
 
   return (
-    <img
+    <Image
       alt={alt}
       className="rounded-xl object-cover"
       height="300"
