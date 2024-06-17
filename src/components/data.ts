@@ -19,7 +19,7 @@ export const scenes: Scenes = {
   },
   "pickle-bri": {
     title: "Congratulations!",
-    description: `Congratulations on receiving the prestigious Pickle Pick award Bri! Your tireless work on Shareable Scenarios has been nothing short of amazing. Your perseverance and relentless dedication hasn't gone unnoticed. You bring joy and enthusiasm to every conversation, thank you for your hard work, your brilliant ideas, and your infectious positive spirit!`,
+    description: `Congratulations on receiving the prestigious Pickle Pick award Bri! Your tireless work on Shareable Scenarios has been nothing short of amazing. Your perseverance and relentless dedication is inspiring! Thank you for being so fun to work with and the enthusiasm you bring to every day!`,
     image: {
       src: "/pickle-bri.jpg",
     },
