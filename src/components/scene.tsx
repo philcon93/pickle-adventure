@@ -32,7 +32,7 @@ interface Link {
 
 export interface SceneProps {
   title: string;
-  description: string;
+  description?: string;
   image?: string;
   links: Link[];
 }
@@ -40,14 +40,12 @@ export interface SceneProps {
 export function Scene(props: { data: SceneProps }) {
   const { data } = props;
 
-  // console.info(data);
-
   return (
     <>
       <Title title={data.title} />
       <Image />
       <div className="space-y-4 text-center font-sans font-[Geist]">
-        <Description description={data.description} />
+        {data.description && <Description description={data.description} />}
         <Links links={data.links} />
       </div>
     </>
@@ -95,7 +93,7 @@ const Links = (props: { links: Link[] }) => {
     <div className="flex flex-col gap-2">
       {links.map((link, index) => (
         <Link
-          className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+          className="inline-flex min-h-10 items-center justify-center rounded-md bg-gray-900 px-6 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
           href={link.url}
           key={index}
         >
