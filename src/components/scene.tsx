@@ -34,7 +34,7 @@ interface Link {
 export interface SceneProps {
   title: string;
   description?: string;
-  image?: string;
+  image?: { src?: string; alt?: string };
   links: Link[];
 }
 
@@ -44,7 +44,7 @@ export function Scene(props: { data: SceneProps }) {
   return (
     <>
       <Title title={data.title} />
-      <ImageWrapper />
+      <ImageWrapper image={data.image} />
       <div className="space-y-4 text-center font-sans font-[Geist]">
         {data.description && <Description description={data.description} />}
         <Links links={data.links} />
@@ -63,15 +63,13 @@ const Title = (props: { title: string }) => {
   );
 };
 
-const ImageWrapper = (props: { src?: string; alt?: string }) => {
-  const { src = "/placeholder.svg", alt = "Choose Your Adventure" } = props;
-
+const ImageWrapper = (props: { image?: SceneProps["image"] }) => {
   return (
     <Image
-      alt={alt}
+      alt={props.image?.alt || "Choose Your Adventure"}
       className="rounded-xl object-cover"
       height="300"
-      src={src}
+      src={props.image?.src || "/placeholder.svg"}
       style={{
         aspectRatio: "500/300",
         objectFit: "cover",
