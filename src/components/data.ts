@@ -17,9 +17,9 @@ export const scenes: Scenes = {
       },
     ],
   },
-  "pickle-bri": {
+  "pickle-pick": {
     title: "Congratulations!",
-    description: `Congratulations on receiving the prestigious Pickle Pick award Bri! Your tireless work on Shareable Scenarios has been nothing short of amazing. Your perseverance and relentless dedication is inspiring! Thank you for being so fun to work with and the enthusiasm you bring to every day!`,
+    description: `The Pickle Pick award goes to: Bri, congratulations! Your tireless work on Shareable Scenarios has been nothing short of amazing. Your perseverance and relentless dedication is inspiring! Thank you for being so fun to work with and the enthusiasm you bring to every day!`,
     image: {
       src: "/pickle-bri.jpg",
     },
@@ -212,27 +212,27 @@ export const scenes: Scenes = {
   },
   "4A": {
     title: "Reciting the Pledge",
-    description: `You correctly recite the Pickle Pledge: "I proclaim it official, Your work’s fully sickle, That’s why I’ve decided, To give you the pickle." A magical door opens, and you find yourself in a grand hall where Bri is working on a new invention.`,
+    description: `You correctly recite the Pickle Pledge: "I proclaim it official, Your work’s fully sickle, That’s why I’ve decided, To give you the pickle." A magical door opens, and you find yourself in a grand hall where an outstanding engineer is working on a new invention.`,
     image: {
       src: "/4A.webp",
     },
     links: [
       {
-        label: "Present Bri with the Pickle Pick award!",
-        url: "/pickle-bri",
+        label: "Present the Pickle Pick!",
+        url: "/pickle-pick",
       },
     ],
   },
   "4B": {
     title: "Choosing to Share",
-    description: `You decide to share, and a hidden door opens, revealing a grand hall where Bri is diligently working on her latest creation.`,
+    description: `You decide to share, and a hidden door opens, revealing a grand hall where an outstanding engineer is diligently working on their latest creation.`,
     image: {
       src: "/4B.webp",
     },
     links: [
       {
-        label: "Present Bri with the Pickle Pick award!",
-        url: "/pickle-bri",
+        label: "Present the Pickle Pick!",
+        url: "/pickle-pick",
       },
     ],
   },
