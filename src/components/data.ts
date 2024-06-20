@@ -31,8 +31,8 @@ export const scenes: Scenes = {
     ],
   },
   "1": {
-    title: "The Enchanted UIPlat Office",
-    description: `You start your mission in the enchanted UIPlat office where a goat, gives you three leads on where the award recipient might be.`,
+    title: "The Enchanted Brisbane Office",
+    description: `You start your mission in the enchanted Brisbane office where a goat, gives you three leads on where the award recipient might be.`,
     image: {
       src: "/1.webp",
     },
@@ -87,7 +87,7 @@ export const scenes: Scenes = {
   },
   "2C": {
     title: "Crystal Cave",
-    description: `The Crystal Cave sparkles with magical energy. You meet a wise old miner who speaks of an engineer who used to visit.`,
+    description: `The Crystal Cave sparkles with magical energy. You meet a eshay miner who speaks in riddles; 'ayay alentedtay engineeryay asway erehay omesay imetay agoyay , ollowfay emay uvbray'`,
     image: {
       src: "/2C.webp",
     },
@@ -97,7 +97,7 @@ export const scenes: Scenes = {
         url: "/3E",
       },
       {
-        label: "Explore the cave on your own",
+        label: "Avoid the eshay minor and explore the cave on your own",
         url: "/3F",
       },
     ],
@@ -176,11 +176,15 @@ export const scenes: Scenes = {
   },
   "3E": {
     title: "Following Directions",
-    description: `The miner's directions lead you to a secluded part of the cave with a magical barrier. To pass through, you must recite the Pickle Pledge.`,
+    description: `The miner's directions lead you to a secluded part of the cave with a magical barrier. 'otay asspay oughthray, ouyay ustmay eciteray ethay icklepay edgeplay' said the eshay miner`,
     image: {
       src: "/3E.webp",
     },
     links: [
+      {
+        label: "What are you talking about you cooked unit",
+        url: "/5A",
+      },
       {
         label:
           "Recite: I declare it official, Your work’s beyond fickle, That’s why I’ve decided, To award you the pickle.",
@@ -237,7 +241,7 @@ export const scenes: Scenes = {
     ],
   },
   "5A": {
-    title: "Reciting the wrong pledge",
+    title: "Incorrect move",
     description: `The ground opens beneath you and you fall into a pit of despair, ending your journey`,
     image: {
       src: "/5A.webp",
