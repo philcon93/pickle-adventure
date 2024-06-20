@@ -97,7 +97,7 @@ export const scenes: Scenes = {
         url: "/3E",
       },
       {
-        label: "Avoid the eshay minor and explore the cave on your own",
+        label: "Avoid the eshay miner and explore the cave on your own",
         url: "/3F",
       },
     ],
